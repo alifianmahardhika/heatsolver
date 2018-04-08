@@ -1,0 +1,28 @@
+# plotter.gpl
+# Plot data and produce EPS file
+# Alifian Mahardhika <fiansmamda@gmail.com>
+# 20180220.2018
+# Execute: gnuplot plotter.gpl
+# Set terminal to eps
+set term post eps color enhanced font "Times, 24"
+# Set bottom margin -- for some distro it needs correction
+set bmargin 3.5
+# Set x-axis
+set xlabel "{/Italic x} (m)" font "Times, 30"
+set xtics 0.5 font "Times, 28"
+set mxtics 4
+# Set y-axis
+set ylabel "{/Italic y} (m)" font "Times, 30"
+set ytics 0.1 font "Times, 28"
+set mytics 2
+# Set grid
+set grid xtics ytics mxtics mytics
+# Plot data
+a = 0.0
+t=a*T
+timestamp = sprintf("{/Italics t} = %1.2f T", a);
+filename = sprintf("heatequation-%1.1f.eps", a);
+set output filename
+unset label
+set label timestamp at -0.25, -0.28 font ", 28"
+plot y(x, t) w l lw 8 t ""

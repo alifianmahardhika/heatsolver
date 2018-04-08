@@ -1,0 +1,513 @@
+set terminal png
+set output './animation/heatplot_frame-001.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.0s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_1.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_1.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-002.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.1s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_2.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_2.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-003.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.1s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_3.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_3.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-004.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.1s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_4.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_4.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-005.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.2s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_5.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_5.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-006.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.2s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_6.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_6.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-007.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.2s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_7.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_7.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-008.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.2s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_8.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_8.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-009.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.3s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_9.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_9.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-010.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.3s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_10.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_10.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-011.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.3s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_11.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_11.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-012.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.4s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_12.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_12.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-013.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.4s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_13.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_13.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-014.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.4s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_14.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_14.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-015.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.5s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_15.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_15.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-016.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.5s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_16.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_16.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-017.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.5s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_17.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_17.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-018.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.6s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_18.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_18.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-019.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.6s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_19.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_19.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-020.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.6s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_20.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_20.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-021.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.7s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_21.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_21.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-022.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.7s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_22.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_22.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-023.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.7s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_23.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_23.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-024.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.8s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_24.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_24.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-025.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.8s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_25.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_25.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-026.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.8s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_26.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_26.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-027.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.8s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_27.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_27.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-028.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.9s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_28.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_28.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-029.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.9s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_29.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_29.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-030.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 0.9s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_30.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_30.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-031.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 1.0s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_31.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_31.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
+set output './animation/heatplot_frame-032.png'
+set title '3D Heat Equation Overtime'
+set xlabel 'X'
+set ylabel 'Y'
+set zlabel 'u'
+set xrange [0:1]
+set yrange [0:1]
+set zrange [0:1]
+set hidden3d
+unset key
+set key
+unset label
+set label "t = 1.0s" at 0.0, 0.0, 24.5
+set palette defined (0 'blue', 20 'red')
+splot './data/plotsolution_32.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_32.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+
