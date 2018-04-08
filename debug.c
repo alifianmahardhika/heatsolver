@@ -34,13 +34,13 @@ int main(int argc, char *argv[]){
   FILE *plotsolution;
   char fname[100],pngname[100],pictloc[100];
   FILE *fp;
-  //plot log error
-  FILE *plotlogerror; //begin plot log error
-  plotlogerror = fopen("plotlogerror.txt","w");
-  if (plotlogerror==NULL) {
-    printf("Error Creating File plotlogerror.txt\n");
-    exit(0);
-  }
+  // //plot log error
+  // FILE *plotlogerror; //begin plot log error
+  // plotlogerror = fopen("plotlogerror.txt","w");
+  // if (plotlogerror==NULL) {
+  //   printf("Error Creating File plotlogerror.txt\n");
+  //   exit(0);
+  // }
   //open or read mesh file
   fp=fopen(argv[1],"r");
   //error handling
@@ -294,8 +294,8 @@ dt = 0.03125;
     } //End CG Iteration
 
     //plotting 3D solution
-    //write solution to a text file
-    sprintf(fname, "./data/plotsolution_%d.txt",t);
+    //write solution to a csv file
+    sprintf(fname, "./data/plotsolution%d.csv",t);
     sprintf(pictloc, "./animation/");
     // puts(fname);
     // printf("\n");
@@ -304,15 +304,17 @@ dt = 0.03125;
       printf("Error Creating File %s\n",fname);
       exit(1);
     }
+    //print file header
+    fprintf(plotsolution, "x, y, z, t\n");
     //print and write the coordinate of the nodal point and solution to plotsolution.txt file
     for(i=1; i<=ne; i++){
       j = elnp[i][1];
       k = elnp[i][2];
       l = elnp[i][3];
-      fprintf(plotsolution, "%f\t %f\t %f\t %f\n", npxy[j][1], npxy[j][2], uh[j], ue[j]);
-      fprintf(plotsolution, "%f\t %f\t %f\t %f\n", npxy[k][1], npxy[k][2], uh[k], ue[k]);
-      fprintf(plotsolution, "%f\t %f\t %f\t %f\n", npxy[l][1], npxy[l][2], uh[l], ue[l]);
-      fprintf(plotsolution, "%f\t %f\t %f\t %f\n\n\n", npxy[j][1], npxy[j][2], uh[j], ue[j]);
+      fprintf(plotsolution, "%f, %f, %f, %f\n", npxy[j][1], npxy[j][2], uh[j], time);
+      fprintf(plotsolution, "%f, %f, %f, %f\n", npxy[k][1], npxy[k][2], uh[k], time);
+      fprintf(plotsolution, "%f, %f, %f, %f\n", npxy[l][1], npxy[l][2], uh[l], time);
+      fprintf(plotsolution, "%f, %f, %f, %f\n", npxy[j][1], npxy[j][2], uh[j], time);
     }
     //3D plotting png using gpl file
     sprintf(pngname,"%sheatplot_frame-%03d.png",pictloc,t);
@@ -428,15 +430,15 @@ dt = 0.03125;
   double decN = 1.0/(nb/4);
   printf("1/N = %f\n", decN);
 
-  //gnuplotting
-  char command1[100],encoder[100],command2[100];
-  sprintf(command1, "gnuplot %s",plottxtname);
-  system(command1);
+  // //gnuplotting
+  // char command1[100],encoder[100],command2[100];
+  // sprintf(command1, "gnuplot %s",plottxtname);
+  // system(command1);
   // sprintf(command2, "mencoder mf://animation/*.png -mf fps=25:type=png -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell -oac copy -o movie.avi");
   // system(command2);
-  //plotting log error
-  fprintf(plotlogerror, "%f\t %f\t %f\n", decN, vh, vh10);
-fclose(plotlogerror);
+//   //plotting log error
+//   fprintf(plotlogerror, "%f\t %f\t %f\n", decN, vh, vh10);
+// fclose(plotlogerror);
 
 //free the memory
 free_imatrix(elnp,1,ne,1,DIM+1);

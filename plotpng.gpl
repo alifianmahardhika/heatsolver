@@ -13,7 +13,7 @@ set key
 unset label
 set label "t = 0.0s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_1.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_1.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution1.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution1.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-002.png'
 set title '3D Heat Equation Overtime'
@@ -29,7 +29,7 @@ set key
 unset label
 set label "t = 0.1s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_2.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_2.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution2.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution2.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-003.png'
 set title '3D Heat Equation Overtime'
@@ -45,7 +45,7 @@ set key
 unset label
 set label "t = 0.1s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_3.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_3.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution3.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution3.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-004.png'
 set title '3D Heat Equation Overtime'
@@ -61,7 +61,7 @@ set key
 unset label
 set label "t = 0.1s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_4.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_4.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution4.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution4.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-005.png'
 set title '3D Heat Equation Overtime'
@@ -77,7 +77,7 @@ set key
 unset label
 set label "t = 0.2s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_5.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_5.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution5.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution5.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-006.png'
 set title '3D Heat Equation Overtime'
@@ -93,7 +93,7 @@ set key
 unset label
 set label "t = 0.2s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_6.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_6.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution6.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution6.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-007.png'
 set title '3D Heat Equation Overtime'
@@ -109,7 +109,7 @@ set key
 unset label
 set label "t = 0.2s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_7.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_7.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution7.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution7.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-008.png'
 set title '3D Heat Equation Overtime'
@@ -125,7 +125,7 @@ set key
 unset label
 set label "t = 0.2s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_8.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_8.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution8.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution8.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-009.png'
 set title '3D Heat Equation Overtime'
@@ -141,7 +141,7 @@ set key
 unset label
 set label "t = 0.3s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_9.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_9.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution9.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution9.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-010.png'
 set title '3D Heat Equation Overtime'
@@ -157,7 +157,7 @@ set key
 unset label
 set label "t = 0.3s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_10.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_10.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution10.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution10.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-011.png'
 set title '3D Heat Equation Overtime'
@@ -173,7 +173,7 @@ set key
 unset label
 set label "t = 0.3s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_11.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_11.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution11.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution11.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-012.png'
 set title '3D Heat Equation Overtime'
@@ -189,7 +189,7 @@ set key
 unset label
 set label "t = 0.4s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_12.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_12.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution12.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution12.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-013.png'
 set title '3D Heat Equation Overtime'
@@ -205,7 +205,7 @@ set key
 unset label
 set label "t = 0.4s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_13.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_13.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution13.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution13.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-014.png'
 set title '3D Heat Equation Overtime'
@@ -221,7 +221,7 @@ set key
 unset label
 set label "t = 0.4s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_14.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_14.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution14.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution14.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-015.png'
 set title '3D Heat Equation Overtime'
@@ -237,7 +237,7 @@ set key
 unset label
 set label "t = 0.5s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_15.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_15.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution15.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution15.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-016.png'
 set title '3D Heat Equation Overtime'
@@ -253,7 +253,7 @@ set key
 unset label
 set label "t = 0.5s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_16.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_16.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution16.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution16.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-017.png'
 set title '3D Heat Equation Overtime'
@@ -269,7 +269,7 @@ set key
 unset label
 set label "t = 0.5s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_17.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_17.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution17.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution17.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-018.png'
 set title '3D Heat Equation Overtime'
@@ -285,7 +285,7 @@ set key
 unset label
 set label "t = 0.6s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_18.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_18.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution18.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution18.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-019.png'
 set title '3D Heat Equation Overtime'
@@ -301,7 +301,7 @@ set key
 unset label
 set label "t = 0.6s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_19.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_19.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution19.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution19.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-020.png'
 set title '3D Heat Equation Overtime'
@@ -317,7 +317,7 @@ set key
 unset label
 set label "t = 0.6s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_20.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_20.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution20.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution20.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-021.png'
 set title '3D Heat Equation Overtime'
@@ -333,7 +333,7 @@ set key
 unset label
 set label "t = 0.7s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_21.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_21.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution21.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution21.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-022.png'
 set title '3D Heat Equation Overtime'
@@ -349,7 +349,7 @@ set key
 unset label
 set label "t = 0.7s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_22.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_22.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution22.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution22.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-023.png'
 set title '3D Heat Equation Overtime'
@@ -365,7 +365,7 @@ set key
 unset label
 set label "t = 0.7s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_23.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_23.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution23.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution23.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-024.png'
 set title '3D Heat Equation Overtime'
@@ -381,7 +381,7 @@ set key
 unset label
 set label "t = 0.8s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_24.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_24.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution24.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution24.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-025.png'
 set title '3D Heat Equation Overtime'
@@ -397,7 +397,7 @@ set key
 unset label
 set label "t = 0.8s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_25.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_25.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution25.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution25.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-026.png'
 set title '3D Heat Equation Overtime'
@@ -413,7 +413,7 @@ set key
 unset label
 set label "t = 0.8s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_26.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_26.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution26.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution26.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-027.png'
 set title '3D Heat Equation Overtime'
@@ -429,7 +429,7 @@ set key
 unset label
 set label "t = 0.8s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_27.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_27.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution27.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution27.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-028.png'
 set title '3D Heat Equation Overtime'
@@ -445,7 +445,7 @@ set key
 unset label
 set label "t = 0.9s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_28.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_28.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution28.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution28.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-029.png'
 set title '3D Heat Equation Overtime'
@@ -461,7 +461,7 @@ set key
 unset label
 set label "t = 0.9s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_29.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_29.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution29.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution29.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-030.png'
 set title '3D Heat Equation Overtime'
@@ -477,7 +477,7 @@ set key
 unset label
 set label "t = 0.9s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_30.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_30.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution30.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution30.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-031.png'
 set title '3D Heat Equation Overtime'
@@ -493,7 +493,7 @@ set key
 unset label
 set label "t = 1.0s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_31.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_31.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution31.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution31.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
 set output './animation/heatplot_frame-032.png'
 set title '3D Heat Equation Overtime'
@@ -509,5 +509,5 @@ set key
 unset label
 set label "t = 1.0s" at 0.0, 0.0, 24.5
 set palette defined (0 'blue', 20 'red')
-splot './data/plotsolution_32.txt' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution_32.txt' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
+splot './data/plotsolution32.csv' u 1:2:3 title "Numerical Solution" w l lw 1 lc 1, './data/plotsolution32.csv' u 1:2:4 title "Exact Solution" w l lw 1 lc 3
 
