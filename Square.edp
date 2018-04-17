@@ -1,4 +1,4 @@
-int n=4;
+int n=32;
 real  x0=0.0,y0=0.0,Lx=1.0,Ly=1.0;
 border  a1(t=0,1){x=x0+Lx*t; y=y0;}
 border  a2(t=0,1){x=x0+Lx; y=y0+Ly*t;}

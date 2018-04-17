@@ -5,10 +5,10 @@ load "iovtk"; // We will output vtk
 // 1.1. Mesh
 int n=4;
 real  x0=0.0,y0=0.0,Lx=1.0,Ly=1.0;
-border  a1(t=0,1){x=x0+Lx*t; y=y0;}
-border  a2(t=0,1){x=x0+Lx; y=y0+Ly*t;}
-border  a3(t=1,0){x=x0+Lx*t; y=y0+Ly;}
-border  a4(t=1,0){x=x0; y=y0+Ly*t;}
+border a1(t=0,1){x=x0+Lx*t; y=y0;}
+border a2(t=0,1){x=x0+Lx; y=y0+Ly*t;}
+border a3(t=1,0){x=x0+Lx*t; y=y0+Ly;}
+border a4(t=1,0){x=x0; y=y0+Ly*t;}
 mesh Th=buildmesh(a1(n)+a2(n)+a3(n)+a4(n));
 plot(Th,wait=0);
 //plot(Th,wait=0,ps="Mesh.eps");
