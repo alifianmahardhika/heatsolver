@@ -1,0 +1,56 @@
+//library init
+load "iovtk";
+
+//define mesh
+real R=1;
+border gamma0(t=0, pi/4)    { x=R*cos(t); y=R*sin(t); }
+border gamma1(t=pi/4, 2*pi) { x=R*cos(t); y=R*sin(t); }
+
+//build mesh
+int n=16;
+mesh Th = buildmesh(gamma0(n)+gamma1(9*n));
+plot(Th, wait=1);
+
+//define finite element space
+fespace Vh(Th,P1);
+Vh u, v;
+Vh uold;
+
+//define macro
+macro gradient(u) [dx(u), dy(u)] // End Of Macro
+
+//define constant
+real nu=1;
+real t=0, T=1;  // Time interval [0,T]
+int  N=100; // Number of time iterations
+real dt=T/N;  // Time step
+
+//define function
+func f=0;
+func real g0(real x, real y, real t) {
+  return 10*(1-1./(t+1));
+}
+func real g1(real x, real y, real t) {
+  return 0;
+}
+
+func u0=0;
+uold = u0;
+
+//define variational heat equation (weak form)
+problem heatEquation(u,v)= int2d(Th)(u*v/dt + nu*gradient(u)'*gradient(v)) - int2d(Th)( uold*v/dt + f*v )
+  //- int1d(Th, gamma1) ( g1(x,y,t)*v ) // Neumann boundary condtion
+  // Dirichlet boundary condtion
+  + on(gamma0, u=g0(x,y,t));
+
+//loop overtime
+for (int k=0; k<N; ++k ) {
+
+  t = t + dt;    // Increase current time
+  heatEquation;  // Solve the PDE variational problem
+  uold = u;      // Save solution for next time step
+
+  // 3. Post-processing (save to VTK for further displaying with Paraview)
+  string filename="heat_equation-" + k + ".vtk";
+  savevtk(filename, Th, u, dataname="Temperature");
+}
