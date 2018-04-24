@@ -1,0 +1,68 @@
+load "iovtk";//library for VTK
+
+//creating Mesh
+int n=4;
+real  x0=0.0,y0=0.0,Lx=1.0,Ly=1.0;
+border  a1(t=0,1){x=x0+Lx*t; y=y0;}
+border  a2(t=0,1){x=x0+Lx; y=y0+Ly*t;}
+border  a3(t=1,0){x=x0+Lx*t; y=y0+Ly;}
+border  a4(t=1,0){x=x0; y=y0+Ly*t;}
+mesh Th=buildmesh(a1(n)+a2(n)+a3(n)+a4(n));
+//plot(Th,wait=0);
+//plot(Th,wait=0,ps="Mesh.eps");
+//savemesh(Th,"mesh.msh");
+
+fespace Vh(Th,P1);
+Vh u, v;
+Vh uold;
+
+macro gradient(u) [dx(u), dy(u)] // End Of Macro
+
+// 1.3. Data definition
+real nu=1;
+real t=0, T=1;  // Time interval [0,T]
+int  N=100; // Number of time iterations
+real dt=T/N;  // Time step
+
+func f=0; //8*(x^2+y^2);
+// func real g1(real x, real y, real t) {
+//   return 40*t;
+// }
+func real g0(real x, real y, real t) {
+  return 100*(1-1./(t+1));
+}
+func real g1(real x, real y, real t) {
+  return 0;
+}
+
+func u0=0; // Init
+
+uold = u0;
+
+// 2. Processing
+
+// Declare (but not solve) the heat equation variational problem
+problem heatEquation(u,v)=
+  // Bilineal form:
+  int2d(Th)(
+    u*v/dt +
+    nu*gradient(u)'*gradient(v) // ' means transpose
+  )
+  // Linear form
+  - int2d(Th)( uold*v/dt + f*v )
+  - int1d(Th, a1) ( g1(x,y,t)*v ) // Neumann boundary condtion
+
+  // Dirichlet boundary condtion
+  + on(a2, u=g0(x,y,t));
+
+// Time iteration loop
+for (int k=0; k<N; ++k ) {
+
+  t = t + dt;    // Increase current time
+  heatEquation;  // Solve the PDE variational problem
+  uold = u;      // Save solution for next time step
+
+  // 3. Post-processing (save to VTK for further displaying with Paraview)
+  string filename="heat" + k + ".vtk";
+  savevtk(filename, Th, u, dataname="Temperature");
+}

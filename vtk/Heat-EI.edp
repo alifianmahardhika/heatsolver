@@ -3,16 +3,13 @@ load "iovtk"; // We will output vtk
 // 1. Pre-processing
 
 // 1.1. Mesh
-int n=4;
-real  x0=0.0,y0=0.0,Lx=1.0,Ly=1.0;
-border a1(t=0,1){x=x0+Lx*t; y=y0;}
-border a2(t=0,1){x=x0+Lx; y=y0+Ly*t;}
-border a3(t=1,0){x=x0+Lx*t; y=y0+Ly;}
-border a4(t=1,0){x=x0; y=y0+Ly*t;}
-mesh Th=buildmesh(a1(n)+a2(n)+a3(n)+a4(n));
-plot(Th,wait=0);
-//plot(Th,wait=0,ps="Mesh.eps");
-//savemesh(Th,"mesh.msh");
+real R=1;
+border gamma0(t=0, pi/4)    { x=R*cos(t); y=R*sin(t); }
+border gamma1(t=pi/4, 2*pi) { x=R*cos(t); y=R*sin(t); }
+
+int n=30;
+mesh Th = buildmesh(gamma0(n)+gamma1(9*n));
+plot(Th, wait=1);
 
 // 1.2. FE space and functions
 fespace Vh(Th,P1);
@@ -53,10 +50,10 @@ problem heatEquation(u,v)=
   )
   // Linear form
   - int2d(Th)( uold*v/dt + f*v )
-  - int1d(Th, a1) ( g1(x,y,t)*v ) // Neumann boundary condtion
+  - int1d(Th, gamma1) ( g1(x,y,t)*v ) // Neumann boundary condtion
 
   // Dirichlet boundary condtion
-  + on(a2, u=g0(x,y,t));
+  + on(gamma0, u=g0(x,y,t));
 
 // Time iteration loop
 for (int k=0; k<N; ++k ) {
@@ -66,6 +63,6 @@ for (int k=0; k<N; ++k ) {
   uold = u;      // Save solution for next time step
 
   // 3. Post-processing (save to VTK for further displaying with Paraview)
-  string filename="heat" + k + ".vtk";
+  string filename="heat_equation-" + k + ".vtk";
   savevtk(filename, Th, u, dataname="Temperature");
 }
