@@ -46,11 +46,9 @@ problem heatEquation(u,v)= int2d(Th)(u*v/dt + nu*gradient(u)'*gradient(v)) - int
 //loop overtime
 for (int k=0; k<N; ++k ) {
 
-  t = t + dt;    // Increase current time
-  heatEquation;  // Solve the PDE variational problem
-  uold = u;      // Save solution for next time step
-
-  // 3. Post-processing (save to VTK for further displaying with Paraview)
-  string filename="heat_equation-" + k + ".vtk";
-  savevtk(filename, Th, u, dataname="Temperature");
+  	t = t + dt;
+	heatEquation;
+	uold = u;
+	string filename="heat_equation-" + k + ".vtk";
+	savevtk(filename, Th, u, dataname="Temperature");
 }
